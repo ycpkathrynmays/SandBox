@@ -1,3 +1,20 @@
+Skip to content
+
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @YCPTimMcKenna Sign out
+0
+0 0 YCPTimMcKenna/Sandbox
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Sandbox/css/main.css
+d98a504  an hour ago
+@YCPTimMcKenna YCPTimMcKenna Final Show Poster
+
+519 lines (408 sloc)  9.22 KB
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -9,6 +26,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
 html {
     color: #222;
@@ -97,54 +117,191 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+/* Global Body Styles */
 
 body{
-    background-color: #fafafa;
+background-color: #585752;
+font-family: 'Roboto', sans-serif;
 }
 
-.MainContent{
-  height: 100%;
+.concrete_overlay{
+  background-image: url('../img/Textured_Background.png');
+  background-repeat: repeat;
   width: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
-.HeroContent{
-  width: 50%;
-  height: 50%;
+/* Header */
+
+header{
+  background-color: #585752;
+  width: 100%;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.header_logo{
+  width: 62.7px;
+  height: auto;
+}
+
+/* Hero Section Styles */
+
+.HeroSection{
+  background-image: url('../img/AFI_hero.jpg');
+  width: 100%;
+  height: 720px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Concent Details Section */
+
+.Concert_Details{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   flex-direction: column;
-  font-family: 'Lato', sans-serif;
 }
 
-.HeroContent p{
+.Lineup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+  flex-direction: column;
+}
+
+.Lineup h1{
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.Lineup p{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.Lineup h2 {
+  font-size: 74px;
+  font-weight: 700;
+  margin: 0 0 25px 0;
+}
+
+.Concert_Dates{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px;
+  color: #fff;
+}
+
+.Dates{
+  margin: 20px;
+  font-weight: 500;
+}
+
+.Dates ul{
+  list-style: none;
+}
+
+.Dates ul li{
+  padding: 3px;
+  font-size: 24px
+}
+
+/* Tickets */
+
+.Tickets{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Tickets button{
+  width: 230px;
+  height: 60px;
+  border: 3px solid #fff;
+  border-radius: 35px;
+  background-color: rgba(0,0,0,0);
+  margin: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Tickets button:hover{
+  border: 3px solid #F89500;
+  color: #F89500;
+}
+
+.Tickets a{
+  color: #fff;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+/* About Page*/
+
+.About{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.About p{
   font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
-.HeroContent h1{
-  font-size: 40px;
-  color: #3e3e3e;
-}
-
-.boldme{
+.About h1{
+  font-size: 36px;
+  line-height: 20px;
   font-weight: 700;
 }
 
-.italicizeme{
-  font-weight: 400i;
+.About h2{
+  font-size: 30px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-top: -5px;
+}
+
+.About ol li{
+  font-size: 14px;
+  line-height: 26px;
   font-style: italic;
 }
 
+.About blockquote{
+  font-size: 28px;
+  line-height: 32px;
+  font-style: italic;
+  padding-left: 20px;
+  opacity: .5;
+}
 
-
-
-
-
-
+.About a{
+  color: #F89500;
+  text-decoration: none;
+}
 
 
 
@@ -236,58 +393,103 @@ body{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 1280px) {
     /* Style adjustments for viewports that meet the condition */
-    body{
-        background-color: #e3e3e3;
+
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    /* Style adjustments for viewports that meet the condition */
+
+
+}
+
+@media screen and (max-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+
+    header{
+      height: 100px;
     }
-    .HeroContent{
-      border: 6px solid #000;
+
+    .HeroSection{
+      height: 432px;
     }
-    .HeroContent h1{
-      color: green;
+
+    .header_logo{
+      width: 80px;
     }
-    .boldme{
-      color: blue;
+
+    .Concert_Dates {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
     }
-    .italicizeme{
-      color: pink;
-      font-size: 20px;
+
+    .Dates{
+      width: 100%;
+      margin: 0;
+    }
+
+    .Dates ul li{
+      font-size: 15px;
     }
 
 
 }
 
-@media (max-width: 600px) and (min-width: 400px) {
+@media screen and (max-width: 360px) {
     /* Style adjustments for viewports that meet the condition */
-    body{
-        background-color: #fafafa;
+
+    header{
+      height: 100px;
     }
-    .HeroContent{
-      border: 1px solid grey;
-      padding: 25px;
+
+    .HeroSection{
+      height: 202px;
     }
-    .HeroContent h1{
-      color: #e38f2a;
+
+    .Lineup h1{
+      font-size: 50px;
     }
-    .HeroContent p{
-      line-height: 20px;
-      padding: 2%;
+
+    .Lineup p{
+      font-size: 14px;
     }
-    .boldme{
-      color: grey;
-      font-size: 25px;
+
+    .Lineup h2 {
+      font-size: 30px;
     }
-    .italicizeme{
-      color: blue;
-      font-size: 8px;
+
+    .Concert_Dates {
+    flex-direction: column;
+    }
+
+    .Dates {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    }
+
+    .Dates ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .Dates ul li{
+      text-align: center;
     }
 
 
 }
-
-
-
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
@@ -371,3 +573,16 @@ body{
         page-break-after: avoid;
     }
 }
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
